@@ -1,0 +1,49 @@
+var express=require("express");
+var bodyParser=require("body-parser");
+
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/Banking');
+var db=mongoose.connection;
+db.on('error', console.log.bind(console, "connection error"));
+db.once('open', function(callback){
+	console.log("connection succeeded");
+})
+
+var app=express()
+app.use(bodyParser.json());
+app.use(express.static('forms'));
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
+
+app.post('/sign_up', function(req,res){
+    var ben_no= req.body.acc_no;
+    var ifsc=req.body.ifsc;
+    var amount = req.body.amt;
+    var purp=req.body.Purpose;
+
+	var data = {
+		"Beneficiary Account Number":ben_no,
+		"IFSC":ifsc,
+		"Amount":amount,
+        "Purpose":purp
+	}
+db.collection('otherTrans').insertOne(data,function(err, collection){
+		if (err) throw err;
+		console.log("Record inserted Successfully");
+			
+	}); 
+	console.log(data);  
+	res.end(JSON.stringify(data));	
+})
+
+
+app.get('/',function(req,res){
+res.set({
+	'Access-control-Allow-Origin': '*'
+	});
+return res.redirect('other_bank_transfer.html');
+}).listen(3000)
+
+
+console.log("server listening at port 3000");
