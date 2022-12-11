@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <header>
+    <div class="topdiv">
+      <br>
+      <h1>Online Banking</h1>
+    </div>
+  </header>
+  <div class="leftdiv">
+    <nav>
+      <ul>
+      <li><a href="dash.html">Home</a></li>
+      <li><a href="view_bal.html">View Balance</a></li>
+      <li><a href="instant_transfer.html">Instant Transfer</a></li>
+      <li><a href="other_bank_transfer.html">Other Bank Transfer</a></li>
+      <li><a href="request_cheque.html">Request Cheque</a></li>
+      <li><a href="add_beneficiary.html">Add Beneficiary</a></li>
+      <li><a href="index.html">Log Out</a></li>
+      </ul>
+    </nav>
+    <!-- <br>
+    &nbsp;&nbsp;&nbsp;<a href="dash.html">Home</a><br><br>
+    &nbsp;&nbsp;&nbsp;<a href="view_bal.html">View Balance</a><br><br>
+    &nbsp;&nbsp;&nbsp;<a href="instant_transfer.html">Instant Transfer</a><br><br>
+    &nbsp;&nbsp;&nbsp;<a href="other_bank_transfer.html">Other Bank Transfer</a><br><br>
+    &nbsp;&nbsp;&nbsp;<a href="request_cheque.html">Request Cheque</a><br><br>
+    &nbsp;&nbsp;&nbsp;<a href="add_beneficiary.html">Add Beneficiary</a><br><br>
+    &nbsp;&nbsp;&nbsp;<a href="index.html">Log Out</a><br><br> -->
+  </div>
+    <div class="formdiv">
+      <br>
+    <form class="subf" action="/sign_up" method="post">
+      <h2>Other Bank Transfer</h2>  
+        <p>
+          <label>Select Beneficiary Account</label><br><br>
+          <input type="text" name="acc_no" required>
+        </p>
+        <p>
+          <label>IFSC Code</label><br><br>
+          <input type="text" name="ifsc" required>
+        </p>
+        <p>
+          <label>Amount</label><br><br>
+          <input type="number" name="amt" required>
+        </p>
+        <p>
+          <label>Purpose</label><br><br>
+          <input type="text" name="Purpose" required>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" value="terms" required>
+            I agree to the terms and conditions
+          </label>
+        </p>
+        <p>
+          <button>Submit</button>
+          <button type="reset">Reset form</button>
+        </p>
+      </form>
+    </div>
+</html>

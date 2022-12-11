@@ -1,0 +1,61 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="style1.css">
+  </head>
+  <header>
+    <div class="topdiv">
+      <br>
+      <h1>Online Banking</h1>
+  </div>
+</header>
+<div class="leftdiv">
+    <nav>
+        <ul>
+        <li><a href="dash.html">Home</a></li>
+        <li><a href="view_bal.html">View Balance</a></li>
+        <li><a href="instant_transfer.html">Instant Transfer</a></li>
+        <li><a href="other_bank_transfer.html">Other Bank Transfer</a></li>
+        <li><a href="request_cheque.html">Request Cheque</a></li>
+        <li><a href="add_beneficiary.html">Add Beneficiary</a></li>
+        <li><a href="login.html">Log Out</a></li>
+        </ul>
+      </nav>
+</div>
+    <div class="formdiv">
+        <br><br>
+    <form class="subf" action="/view_bal" method="post">
+        <h2>Cheque Request</h2>
+        <p>
+          <label>Account Number</label><br><br>
+          <input type="text" name="accno" required>
+        </p>
+        <p>
+          <label>Threshold</label><br><br>
+          <input type="text" name="thr" required>
+        </p>
+        <p>
+          <label>Number of Cheque Books</label><br><br>
+          <input type="text" name="no" required>
+        </p>
+        <p>
+          <label for="leaves">Number of Leaves</label><br><br>
+          <select name="leav" id="leaves" required>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" value="terms" required>
+            I agree to the terms and conditions
+          </label>
+        </p>
+        <p>
+          <button type="submit">Submit</button> &nbsp;
+          <button type="reset">Reset form</button>
+        </p>
+      </form>
+    </div>
+</html>

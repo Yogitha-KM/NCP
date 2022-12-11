@@ -1,0 +1,160 @@
+  a{
+    color: white;
+    text-align: center;
+    background-color: #d89b93;
+    /* color: white; */
+    width: 80%;
+    height: 100%;
+    text-decoration: none;
+    display: inline-block;
+  }
+  h2{
+    color:#62866d;
+  }
+  h1{
+    color: white;
+  }
+  @media screen and (max-device-width: 640px) {
+    html {
+      width: 400px;
+      height: 200px;
+    }
+  }
+  .mainf{
+    border-radius: 25px;
+    margin: auto;border: 2px solid white;width: 300;text-align: center;
+    background-color: rgb(212, 203, 203);
+  }
+  .subf{
+    border-radius: 25px;
+    margin-left: 280;
+    border: 2px solid white;
+    width: 300;
+    text-align: center;
+    background-color: rgb(212, 203, 203);
+  }
+  button{
+    color: rgb(46, 45, 45);
+    font-weight: bold;
+    background-color: rgb(119, 219, 219);
+    border: 2px solid ;
+    border-radius: 25px;
+    width: 100;
+    height: 35;
+  }
+  label{
+    font-size:large;
+  }
+  /* .tot{
+    display:flex;
+    flex-wrap: wrap;
+  } */
+  .formdiv{
+    align-content: left;
+    background-color:#A7BEAE;
+    width:85%;
+    height:650;
+    float:right;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  .dashformdiv{
+    align-content: left;
+    background-color:#A7BEAE;
+    width:85%;
+    height:900;
+    float:right;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .loginformdiv{
+    align-content: center;
+    background-color:#A7BEAE;
+    height:85%;
+  }
+  .registerformdiv{
+    align-content: center;
+    background-color:#A7BEAE;
+    height: 100%;
+  }
+  .bendiv{
+    align-content: left;
+    background-color:#A7BEAE;
+    width:85%;
+    height:700;
+    float:right;
+  }
+  .leftdiv{
+    width:15%;height:650;background-color:#E7E8D1;float: left;
+    font-size: large;
+  }
+  .dashleftdiv{
+    width:15%;height:900;background-color:#E7E8D1;float: left;
+    font-size: large;
+  }
+  .topdiv{
+    background-color: #d89b93; text-align:center; height:100;
+  }
+  .termsdiv{
+    border: 3px; 
+    border-style: solid; 
+    border-color: rgb(41, 75, 75);
+    padding-left: 15;
+    border-radius: 2px;
+    background-color: rgb(209, 212, 214);
+  }
+  ul {
+    display: grid;
+    gap: 20px;
+    list-style-type:none;
+    padding-left: 20px;
+    /* line-height: 2;
+    line-break: ;
+    
+    padding-top: 30px;
+    padding-bottom: 20px; */
+    /* margin: 10;
+    
+    
+    padding-right: 40px;  */
+  }
+  /* input{
+    border-radius: 10px;
+    width: 150px;
+    height:25px;
+    border-color: white;
+  } */
+  input[type=text]{
+    width: 200px;
+    height:25px;
+    border-radius: 5px;
+    border-color: white;
+  }
+  input[type=number]{
+    width: 150px;
+    height:25px;
+    border-radius: 5px;
+    border-color: white;
+  }
+  input[type=email]{
+    width: 200px;
+    height:25px;
+    border-radius: 5px;
+    border-color: white;
+  }
+  input[type=tel]{
+    width: 150px;
+    height:25px;
+    border-radius: 5px;
+    border-color: white;
+  }
+  input[type=password]{
+    width: 200px;
+    height:25px;
+    border-radius: 5px;
+    border-color: white;
+  }
+  .viewport{
+    width:max-content;
+  }

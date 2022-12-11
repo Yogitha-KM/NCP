@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <script>
+          function validateform(){  
+            var id=document.form1.id.value;  
+            var password=document.form1.pw.value;  
+            if (id==null || id==""){  
+              alert("User Id can't be blank");  
+              return false;  
+            }else if(password.length<6){  
+              alert("Password must be at least 6 characters long.");  
+              return false;  
+            }  
+          }  
+    </script>
+  </head>
+  <!-- <body> -->
+  <!-- <div class="tot"> -->
+  <header>
+    <div class="topdiv">
+      <br>
+      <h1>Online Banking</h1>
+  </div>
+</header>
+<!-- <div class="leftdiv">
+  <br>
+  &nbsp;&nbsp;&nbsp;<a href="index.html">Home</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="login.html">Login</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="register.html">Register</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="view_bal.html">View Balance</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="instant_transfer.html">Instant Transfer</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="request_cheque.html">Request Cheque</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="add_beneficiary.html">Add Beneficiary</a>
+</div> -->
+    <div class="loginformdiv">
+        <br><br>
+    <form class="mainf" name="form1" action="dash.html" method="post" onsubmit="return validateform()">
+        <h2>Login</h2>
+        <p>
+          <label>User ID</label><br><br>
+          <input type="text" name="id" required>
+        </p>
+        <p>
+            <label>Password</label><br><br>
+            <input type="password" name="pw" required>
+          </p>
+        <p>
+          <button type="submit">Login</button> &nbsp;
+          <button type="reset">Reset form</button>
+        </p>
+        <p>
+          <a style="width: 100;height: 50;"href="register.html">New User? Register Here</a>
+        </p>
+      </form>
+    </div>
+  <!-- </div> -->
+  <!-- </body> -->
+</html>
